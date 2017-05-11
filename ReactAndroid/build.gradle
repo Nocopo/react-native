@@ -35,7 +35,7 @@ task createNativeDepsDirectories {
 }
 
 task downloadBoost(dependsOn: createNativeDepsDirectories, type: Download) {
-    src 'https://github.com/react-native-community/boost-for-react-native/releases/download/v1.57.0-1/boost_1_57_0.tar.gz'
+    src 'http://mirror.nienbo.com/boost/boost_1_57_0.zip'
     onlyIfNewer true
     overwrite false
     dest new File(downloadsDir, 'boost_1_57_0.tar.gz')
